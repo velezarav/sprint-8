@@ -1,0 +1,35 @@
+@import '../fonts/fonts.css';
+
+.space-file{
+    margin: 0 auto;
+    margin-top: 13rem;
+    color: rgb(131, 131, 131);;
+    font-family: 'DIN-Next', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: start;
+    background-color: rgb(34, 34, 34, .7);
+    overflow: hidden;
+}
+
+.space-file img {
+    border-bottom: 3px solid rgb(224, 104, 104);
+}
+
+.container-data {
+    padding: 0 2rem;
+}
+
+.container-details {
+    display: flex;
+    gap: 4rem;
+}
+
+.container-details span{
+    color: white;
+}
+
+.container-details div{
+    width: 50%;
+}
