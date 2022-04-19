@@ -1,38 +1,91 @@
-.App {
+@import '../src/fonts/fonts.css';
+
+.Home {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url('./img/background-stars.jpeg');
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.NavBar {
+  font-family: 'DIN-Next', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: .8em;
+  letter-spacing: 2px;
+  line-height: 1.375rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.NavBar-up {
+  width: 100%;
+  min-height: 7rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem auto;
+  background-image: url('./img/sw_logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.login {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: auto;
+  position: relative;
+}
+
+.login a {
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+  margin: 0 1rem;
+}
+
+.login a:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login p {
+  color: rgb(77, 75, 75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.NavBar-down {
+  border: 1px solid rgb(58, 58, 58);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.NavBar-down li {
+  list-style: none;
+  padding: 1rem;
+  border-left: 1px solid rgb(58, 58, 58);
+  border-right: 1px solid rgb(58, 58, 58);
+  height: 100%;
+}
+
+.NavBar-down li a{
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(128, 125, 125);
+  height: 100%;
+}
+
+.NavBar-down li a:hover{
+  text-decoration: none;
+  color: white;
+  height: 100%;
 }
