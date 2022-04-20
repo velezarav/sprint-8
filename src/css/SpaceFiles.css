@@ -14,11 +14,19 @@
 }
 
 .space-file img {
-    border-bottom: 3px solid rgb(224, 104, 104);
+    border-bottom: 3px solid rgb(156, 78, 95);
 }
 
 .container-data {
     padding: 0 2rem;
+    letter-spacing: .024rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.container-data h1 {
+    color: rgb(156, 156, 156);
+    letter-spacing: .2rem;
 }
 
 .container-details {
@@ -32,4 +40,13 @@
 
 .container-details div{
     width: 50%;
+}
+
+.pilots-films {
+    background-color: rgb(177, 176, 176);
+    width: 40%;
+    margin: 1rem;
+    border-radius: 15px;
+    padding: 1rem;
+    color: white;
 }

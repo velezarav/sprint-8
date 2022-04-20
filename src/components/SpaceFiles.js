@@ -1,5 +1,6 @@
 import React from "react";
 import '../css/SpaceFiles.css'
+import Pilots from "./Pilots";
 
 export default function SpaceFiles() {
     const ship = {
@@ -16,7 +17,12 @@ export default function SpaceFiles() {
         hyperdrive_rating: 4.0,
         MGLT: 10,
         starship_class: "Deep Space Mobile Battlestation",
-        pilots: [],
+        pilots: [
+            "https://swapi.dev/api/people/13/", 
+            "https://swapi.dev/api/people/14/", 
+            "https://swapi.dev/api/people/25/", 
+            "https://swapi.dev/api/people/31/"
+        ],
         films: [
             "https://swapi.dev/api/films/1/"
         ],
@@ -47,7 +53,7 @@ export default function SpaceFiles() {
                     </div>
                 </div>
             </div>
-            
+            <Pilots ship={ship}/>
         </div>
     )
 }
