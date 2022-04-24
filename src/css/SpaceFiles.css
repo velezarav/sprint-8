@@ -3,6 +3,7 @@
 .space-file{
     margin: 0 auto;
     margin-top: 13rem;
+    margin-bottom: 2rem;
     color: rgb(131, 131, 131);;
     font-family: 'DIN-Next', Helvetica, Arial, sans-serif;
     display: flex;

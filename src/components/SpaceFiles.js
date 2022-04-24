@@ -53,7 +53,7 @@ export default function SpaceFiles() {
                     </div>
                 </div>
             </div>
-            <Pilots ship={ship}/>
-        </div>
+            {/* <Pilots ship={ship}/> */}
+        </div> 
     )
 }

@@ -1,0 +1,31 @@
+@import '../fonts/fonts.css';
+
+.space-list {
+    margin-top: 14rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list-item {
+    background-color: rgba(62, 62, 62, 0.5);
+    font-family: 'DIN-Next', Helvetica, Arial, sans-serif;
+    width: 80%;
+    margin: .5rem auto;
+    text-align: start;
+}
+
+.list-item:hover {
+    background-color: rgba(91, 91, 91, 0.5);
+}
+
+.list-item p {
+    color: gray;
+    margin: .5rem 1rem;
+}
+
+.list-item p:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: -0.3rem;
+}
