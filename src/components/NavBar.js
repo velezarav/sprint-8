@@ -1,5 +1,6 @@
 import React from 'react'
 import '../fonts/DIN-Next-W01/DIN-Next-W01-Bold.otf'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -13,8 +14,8 @@ const NavBar = () => {
                 </div>
             </div>
             <ul className='NavBar-down'>
-                <li ><a href='#'>HOME</a></li>
-                <li ><a href='#'>SPACESHIPS</a></li>
+                <li ><a href='#'><Link to="/home">HOME</Link></a></li>
+                <li ><a href='#'><Link to="/spaceship-list">SPACESHIPS</Link></a></li>
             </ul>
 
 

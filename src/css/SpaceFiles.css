@@ -44,10 +44,20 @@
 }
 
 .pilots-films {
-    background-color: rgb(177, 176, 176);
-    width: 40%;
+    background-color: rgb(177, 176, 176, .2);
     margin: 1rem;
     border-radius: 15px;
     padding: 1rem;
     color: white;
+    text-align: start;
+}
+
+.films-container{
+    width: 50%;
+    text-align: center;
+}
+
+.films-container h5{
+    font-weight: bold;
+    font-size: 1rem;
 }

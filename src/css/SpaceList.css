@@ -2,10 +2,12 @@
 
 .space-list {
     margin-top: 14rem;
+    margin-bottom: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
 .list-item {
@@ -14,6 +16,8 @@
     width: 80%;
     margin: .5rem auto;
     text-align: start;
+    outline: inherit;
+
 }
 
 .list-item:hover {
@@ -25,7 +29,21 @@
     margin: .5rem 1rem;
 }
 
+.list-item a {
+    text-decoration: none;
+}
+
 .list-item p:nth-child(1) {
     font-weight: bold;
     margin-bottom: -0.3rem;
+}
+
+.loading-ships {
+    font-family: 'DIN-Next', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: .15rem;
+    width: 60%;
+    margin: .75rem auto;
+    text-align: center;
+    padding: .85rem;
 }

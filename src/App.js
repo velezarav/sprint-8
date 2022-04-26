@@ -1,14 +1,10 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import SpaceFiles from './components/SpaceFiles';
-import SpaceList from './components/SpaceList';
+import Routes from './Routes';
 
 function App() {
   return (
     <div className="Home">
-      <NavBar />
-      <SpaceList />
-      {/* <SpaceFiles /> */}
+      <Routes />
     </div>
   );
 }
