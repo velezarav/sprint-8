@@ -14,10 +14,9 @@ export default function SpaceFiles(props) {
         .then(({data}) => setShip(data))
     },[])
 
-    console.log(ship.pilot)
+    console.log(ship.pilots)
 
     const imgShip = `http://starwars-visualguide.com/assets/img/starships/${id}.jpg`
-
 
     return(
         <div className="space-file">
@@ -38,7 +37,8 @@ export default function SpaceFiles(props) {
                     </div>
                 </div>
             </div>
-            {ship.films != undefined && <Films films={ship.films}/>}
+            {ship.films && <Films films={ship.films}/>}
+            {ship.pilots &&  <Pilots pilots={ship.pilots}/>}
         </div> 
     )
 }

@@ -8,6 +8,8 @@ export default function SpaceList(){
 
     const [loadingShips, setLoadingShips] = useState(true);
 
+    // const [hasMore, setHasMore] = useState(true)
+
     let pages = 1;
     const loadPages = () => {
         axios.get(`https://swapi.dev/api/starships/?page=${pages}`)
@@ -17,7 +19,7 @@ export default function SpaceList(){
             data.results.map(ship => newShips.push(ship))
             data.next == null ? setLoadingShips(false) : setLoadingShips(true);
             setShips( ships => [...ships, ...newShips])
-        });
+        })
         pages += 1;
     }
 
