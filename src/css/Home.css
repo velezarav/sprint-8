@@ -1,0 +1,7 @@
+@import '../fonts/fonts.css';
+
+.home-container {
+    color: white;
+    font-size: 5rem;
+    margin-top: 14rem;
+}
