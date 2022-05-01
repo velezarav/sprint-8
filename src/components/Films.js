@@ -1,20 +1,21 @@
 import "../css/SpaceFiles.css";
 
 export default function Films({ films }) {
-  
-    const singleFilm = films.map((film) => (
-        <div key={film.url} className="pilots-films">
-            <img src={film.img} />
-            <p>{film.title.toUpperCase()}</p>
-            <p>Episode  number: {film.episode_id}</p>
-            <p>Release date: {film.release_date}</p>
-        </div>
-    ));
-        console.log(films)
-    return (
-        <div className="films-container">
-            <h5>STARS IN FILMS:</h5>
-            {singleFilm}
-        </div>
-    );
+  console.log(films)
+  const newFilms = [...films]
+  const singleFilm = newFilms.map(currentFilm => (
+    <div key={currentFilm.url} className="pilots-films">
+      <img src={currentFilm.img} />
+      <p>{currentFilm.title.toUpperCase()}</p>
+      <p>Episode  number: {currentFilm.episode_id}</p>
+      <p>Release date: {currentFilm.release_date}</p>
+    </div>
+  ));
+  console.log(newFilms)
+  return (
+    <div className="films-container">
+      {films.length > 0 && <h5>STARS IN FILMS:</h5>}
+      {singleFilm}
+    </div>
+  );
 }

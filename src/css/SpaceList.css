@@ -1,49 +1,48 @@
-@import '../fonts/fonts.css';
+@import "../fonts/fonts.css";
 
 .space-list {
-    margin-top: 14rem;
-    margin-bottom: 1rem;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+  margin-top: 14rem;
+  margin-bottom: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .list-item {
-    background-color: rgba(62, 62, 62, 0.5);
-    font-family: 'DIN-Next', Helvetica, Arial, sans-serif;
-    width: 80%;
-    margin: .5rem auto;
-    text-align: start;
-    outline: inherit;
-
+  background-color: rgba(62, 62, 62, 0.5);
+  font-family: "DIN-Next", Helvetica, Arial, sans-serif;
+  width: 80%;
+  margin: 0.5rem auto;
+  text-align: start;
+  outline: inherit;
 }
 
 .list-item:hover {
-    background-color: rgba(91, 91, 91, 0.5);
+  background-color: rgba(91, 91, 91, 0.5);
 }
 
 .list-item p {
-    color: gray;
-    margin: .5rem 1rem;
+  color: gray;
+  margin: 0.5rem 1rem;
 }
 
 .list-item a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list-item p:nth-child(1) {
-    font-weight: bold;
-    margin-bottom: -0.3rem;
+  font-weight: bold;
+  margin-bottom: -0.3rem;
 }
 
 .loading-ships {
-    font-family: 'DIN-Next', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    letter-spacing: .15rem;
-    width: 60%;
-    margin: .75rem auto;
-    text-align: center;
-    padding: .85rem;
+  font-family: "DIN-Next", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  width: 60%;
+  margin: 0.75rem auto;
+  text-align: center;
+  padding: 0.85rem;
 }

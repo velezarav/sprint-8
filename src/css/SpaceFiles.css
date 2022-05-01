@@ -1,77 +1,77 @@
-@import '../fonts/fonts.css';
+@import "../fonts/fonts.css";
 
-.space-file{
-    margin: 0 auto;
-    margin-top: 13rem;
-    margin-bottom: 2rem;
-    color: rgb(131, 131, 131);;
-    font-family: 'DIN-Next', Helvetica, Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    text-align: start;
-    background-color: rgb(34, 34, 34, .7);
-    overflow: hidden;
+.space-file {
+  margin: 0 auto;
+  margin-top: 13rem;
+  margin-bottom: 2rem;
+  color: rgb(131, 131, 131);
+  font-family: "DIN-Next", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: start;
+  background-color: rgb(34, 34, 34, 0.7);
+  overflow: hidden;
 }
 
 .space-file img {
-    border-bottom: 3px solid rgb(99, 115, 204);
+  border-bottom: 3px solid rgb(99, 115, 204);
 }
 
 .container-data {
-    padding: 0 2rem;
-    letter-spacing: .024rem;
-    text-align: justify;
-    text-justify: inter-word;
+  padding: 0 2rem;
+  letter-spacing: 0.024rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .container-data h1 {
-    color: rgb(156, 156, 156);
-    letter-spacing: .2rem;
+  color: rgb(156, 156, 156);
+  letter-spacing: 0.2rem;
 }
 
 .container-details {
-    display: flex;
-    gap: 4rem;
+  display: flex;
+  gap: 4rem;
 }
 
-.container-details span{
-    color: white;
+.container-details span {
+  color: white;
 }
 
-.container-details div{
-    width: 50%;
+.container-details div {
+  width: 50%;
 }
 
-.films-container{
-    width: 50%;
-    text-align: center;
+.films-container {
+  width: 50%;
+  text-align: center;
 }
 
-.films-container h5{
-    font-weight: 500;
-    letter-spacing: .4rem;
-    font-size: 1.4rem;
-    margin: 1.5rem auto .5rem;
+.films-container h5 {
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+  font-size: 1.4rem;
+  margin: 1.5rem auto 0.5rem;
 }
 
 .pilots-films {
-    background-color: rgba(122, 122, 122, 0.2);
-    margin: 1rem;
-    border-radius: 15px;
-    padding: 1rem;
-    color: rgb(184, 184, 184);
-    text-align: start;
-    font-weight: 300;
-    letter-spacing: .05rem;
+  background-color: rgba(122, 122, 122, 0.2);
+  margin: 1rem;
+  border-radius: 15px;
+  padding: 1rem;
+  color: rgb(184, 184, 184);
+  text-align: start;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
 }
 
 .pilots-films p:nth-child(2) {
-    font-weight: 500;
-    color: rgb(218, 218, 218);
-    letter-spacing: .15rem;
+  font-weight: 500;
+  color: rgb(218, 218, 218);
+  letter-spacing: 0.15rem;
 }
 
 .pilots-films img {
-    width: 100%;
+  width: 100%;
 }

@@ -1,7 +1,69 @@
-@import '../fonts/fonts.css';
+@import "../fonts/fonts.css";
 
 .home-container {
-    color: white;
-    font-size: 5rem;
-    margin-top: 14rem;
+  color: white;
+  font-size: 1rem;
+  margin-top: 14rem;
+  font-family: "DIN-Next", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  letter-spacing: .1rem;
+}
+
+.home-container h5 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.home-container a {
+  text-decoration: underline;
+  color: gray;
+  cursor: pointer;
+}
+
+.loggin-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+  margin: 2rem auto;
+}
+
+.loggin-container label {
+  font-weight: bold;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+.loggin-container input {
+  border: none;
+  border-radius: 10px;
+  height: 1.7rem;
+  margin-bottom: 1rem;
+  padding: 0 .5rem;
+}
+
+.log-button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  background-color: rgb(177, 174, 174, .7);
+  letter-spacing: .3rem;
+  padding: 0.4rem .5rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 10rem;
+}
+
+.login-error {
+  font-weight: bold;
+  color: rgb(99, 115, 204);
+  margin-top: 2rem;
 }

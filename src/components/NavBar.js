@@ -4,23 +4,22 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
-    return(
-        <nav className='NavBar'>
-            <div className='NavBar-up'>
-                 <div className='login'>
-                <a href='#'>LOG IN</a>
-                <p>//</p>
-                <a href='#'>SIGN UP</a>
-                </div>
-            </div>
-            <ul className='NavBar-down'>
-                <li ><a href='#'><Link to="/home">HOME</Link></a></li>
-                <li ><a href='#'><Link to="/spaceship-list">SPACESHIPS</Link></a></li>
-            </ul>
+  return (
+    <nav className='NavBar'>
+      <div className='NavBar-up'>
+        <div className='login'>
+        <Link to="/home">LOGIN AREA</Link>
+
+        </div>
+      </div>
+      <ul className='NavBar-down'>
+        <li ><a href='#'><Link to="/home">HOME</Link></a></li>
+        <li ><a href='#'><Link to="/spaceship-list">SPACESHIPS</Link></a></li>
+      </ul>
 
 
-        </nav>
-    )
+    </nav>
+  )
 };
 
 export default NavBar;
