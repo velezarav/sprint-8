@@ -13,8 +13,8 @@ const NavBar = () => {
         </div>
       </div>
       <ul className='NavBar-down'>
-        <li ><a href='#'><Link to="/home">HOME</Link></a></li>
-        <li ><a href='#'><Link to="/spaceship-list">SPACESHIPS</Link></a></li>
+        <li ><Link to="/home">HOME</Link></li>
+        <li ><Link to="/spaceship-list">SPACESHIPS</Link></li>
       </ul>
 
 

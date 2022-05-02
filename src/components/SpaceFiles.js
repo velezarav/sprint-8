@@ -7,7 +7,10 @@ import Films from "./Films";
 
 export default function SpaceFiles(props) {
   const { id } = useParams();
-  const [ship, setShip] = useState({})
+  const [ship, setShip] = useState({
+    films: [],
+    pilots: []
+  })
 
   const fetchSpaceship = () => {
     axios.get(`https://swapi.dev/api/starships/${id}/`)
@@ -24,6 +27,7 @@ export default function SpaceFiles(props) {
               const img = `http://starwars-visualguide.com/assets/img/films/${imgNum}.jpg`
               const newData = { ...data, img: img };
               newState.films.push(newData);
+              setShip(newState)
             })
         })
         data.pilots.map(currentPilot => {
@@ -35,6 +39,7 @@ export default function SpaceFiles(props) {
               const img = `http://starwars-visualguide.com/assets/img/characters/${imgNum}.jpg`;
               const newData = { ...data, img: img };
               newState.pilots.push(newData);
+              setShip(newState)
             })
         })
         setShip(newState)
@@ -48,7 +53,7 @@ export default function SpaceFiles(props) {
   const imgShip = `http://starwars-visualguide.com/assets/img/starships/${id}.jpg`
 
   // NO LOGRÉ QUE SE RENDERICEN LAS TARJETAS DE PILOTOS Y FILMS :(
-
+  console.log('ship', ship)
   return (
     <div className="space-file">
       <img src={imgShip} />
@@ -68,8 +73,8 @@ export default function SpaceFiles(props) {
           </div>
         </div>
       </div>
-{/*       <Films films={ship.films} />
-{/*       <Pilots pilots={ship.pilots} /> */}
+    {(ship.films.length > 0) && <Films films={ship.films} /> }
+    {(ship.pilots.length > 0) &&  <Pilots pilots={ship.pilots} />}
     </div>
   )
 }

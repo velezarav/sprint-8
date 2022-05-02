@@ -17,7 +17,6 @@ export default function SpaceList() {
     axios.get(`https://swapi.dev/api/starships/?page=${pages}`)
       .then(({ data }) => {
         const newShips = [];
-        console.log(data)
         data.results.map(ship => newShips.push(ship))
         data.next == null ? setLoadingShips(false) : setLoadingShips(true);
         setShips(ships => [...ships, ...newShips])
@@ -47,6 +46,7 @@ export default function SpaceList() {
 
   const notLogged = <div>
     <p>You need to be logged to see the Starships.</p>
+    <Link to="/home"><span className="login-redirect">Go to login area</span></Link>
   </div>
 
   return (

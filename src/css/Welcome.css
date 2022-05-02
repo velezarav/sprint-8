@@ -1,0 +1,44 @@
+@import "../fonts/fonts.css";
+
+.welcome-container {
+    z-index: 99;
+    color: white;
+    background-color: azure;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/background-stars.jpeg');
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.welcome-message {
+    width: 70%;
+    align-self: center;
+}
+
+.welcome-container h5 {
+    font-family: "StarJedi", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+}
+
+.welcome-container h5 span {
+    font-size: 4rem;
+    color: transparent;
+    -webkit-text-stroke: 2px yellow;
+}
+
+.welcome-container p {
+    font-family: "DIN-Next", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+}
+
+.welcome-container button {
+    font-family: "StarJedi", Helvetica, Arial, sans-serif;
+}

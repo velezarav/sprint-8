@@ -62,8 +62,19 @@
   width: 10rem;
 }
 
+.log-button:hover {
+  background-color: rgb(177, 174, 174);
+}
+
 .login-error {
   font-weight: bold;
   color: rgb(99, 115, 204);
   margin-top: 2rem;
+}
+
+.login-redirect {
+  text-decoration: underline;
+  color: gray;
+  cursor: pointer;
+  font-weight: 500;
 }

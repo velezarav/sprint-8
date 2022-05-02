@@ -6,7 +6,7 @@ export default function Films({ films }) {
   const singleFilm = newFilms.map(currentFilm => (
     <div key={currentFilm.url} className="pilots-films">
       <img src={currentFilm.img} />
-      <p>{currentFilm.title.toUpperCase()}</p>
+      <p>{currentFilm.title}</p>
       <p>Episode  number: {currentFilm.episode_id}</p>
       <p>Release date: {currentFilm.release_date}</p>
     </div>
