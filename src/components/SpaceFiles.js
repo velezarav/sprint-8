@@ -56,7 +56,11 @@ export default function SpaceFiles(props) {
   console.log('ship', ship)
   return (
     <div className="space-file">
-      <img src={imgShip} />
+      <img src={imgShip} onError={(e) => {
+        e.target.onerror = null;
+        e.target.src =
+          "https://starwars-visualguide.com/assets/img/big-placeholder.jpg";
+      }} />
       <div className="container-data">
         <h1>{ship.name}</h1>
         <p>This awesome spaceship has the following specs: </p>
@@ -73,8 +77,12 @@ export default function SpaceFiles(props) {
           </div>
         </div>
       </div>
-    {(ship.films.length > 0) && <Films films={ship.films} /> }
-    {(ship.pilots.length > 0) &&  <Pilots pilots={ship.pilots} />}
+
+      <div className="cards">
+        {(ship.films.length > 0) && <Films films={ship.films} />}
+        {(ship.pilots.length > 0) && <Pilots pilots={ship.pilots} />}
+      </div>
+
     </div>
   )
 }

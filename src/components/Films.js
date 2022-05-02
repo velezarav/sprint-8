@@ -14,7 +14,7 @@ export default function Films({ films }) {
   console.log(newFilms)
   return (
     <div className="films-container">
-      {films.length > 0 && <h5>STARS IN FILMS:</h5>}
+      {films.length > 0 && <h5>APPEARS IN:</h5>}
       {singleFilm}
     </div>
   );

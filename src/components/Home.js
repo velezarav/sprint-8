@@ -83,6 +83,10 @@ export default () => {
   const handleSubmitSign = (e) => {
     setNewUser(user)
     setShowSignUp(!showSignUp)
+    setUser({
+      username: "",
+      password: ""
+    })
   }
 
   const handleChangeSign = e => {
@@ -102,6 +106,7 @@ export default () => {
       onChange={handleChangeLogin}
       name="username"
       value={user.username}
+      required
     />
     <label htmlFor="password">Password: </label>
     <input
@@ -109,6 +114,7 @@ export default () => {
       onChange={handleChangeLogin}
       name="password"
       value={user.password}
+      required
     />
     <button className="log-button" onClick={handleSubmitLogin}>LOG IN</button>
   </div>
@@ -120,6 +126,7 @@ export default () => {
       onChange={handleChangeSign}
       name="username"
       value={user.username}
+      required
     />
     <label htmlFor="password">Password: </label>
     <input
@@ -127,6 +134,7 @@ export default () => {
       onChange={handleChangeSign}
       name="password"
       value={user.password}
+      required
     />
     <button className="log-button" onClick={handleSubmitSign}>SIGN UP</button>
   </div>

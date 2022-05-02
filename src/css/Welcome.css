@@ -37,8 +37,19 @@
     font-size: 1.5rem;
     font-weight: normal;
     letter-spacing: .1rem;
+    margin-bottom: 2rem;
 }
 
-.welcome-container button {
+.welcome-container a {
     font-family: "StarJedi", Helvetica, Arial, sans-serif;
+    color: yellow;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 auto;
+    letter-spacing: .2rem;
+}
+
+.welcome-container a:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
 }

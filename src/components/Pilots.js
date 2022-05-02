@@ -10,7 +10,7 @@ export default function Pilots({ pilots }) {
 
   return (
     <div className="films-container">
-      {pilots.length > 0 && <h5>GUIDED BY:</h5>}
+      {pilots.length > 0 && <h5>DRIVEN BY:</h5>}
       {singlePilot}
     </div>
   )
